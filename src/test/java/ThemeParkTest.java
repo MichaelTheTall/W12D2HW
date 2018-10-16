@@ -32,11 +32,11 @@ public class ThemeParkTest {
 
         themePark = new ThemePark("ThemePark",floss,dodgems,icecream,park,playground,roller,tobacco);
 
-        anna = new Visitor(12, 110, 5.00);
-        bob = new Visitor(20, 180, 50.00);
-        charlie = new Visitor(18, 150, 60.00);
-        denise = new Visitor(16, 135, 40.00);
-        emily = new Visitor(28, 160, 100.00);
+        anna = new Visitor("Anna",12, 110, 5.00);
+        bob = new Visitor("bob",20, 180, 50.00);
+        charlie = new Visitor("Charlie",18, 150, 60.00);
+        denise = new Visitor("Denise",16, 135, 40.00);
+        emily = new Visitor("Emily",28, 160, 100.00);
 
 
         themePark.addVisitor(anna);
@@ -107,6 +107,11 @@ public class ThemeParkTest {
     public void parkShut(){
         themePark.parkShut();
         assertEquals(0, themePark.getVisitors().size());
+    }
+
+    @Test
+    public void visit(){
+        assertEquals("Anna is visiting Keep on Rollin'!", themePark.visit(anna, roller));
     }
 }
 

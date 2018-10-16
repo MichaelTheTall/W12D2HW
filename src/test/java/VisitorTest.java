@@ -9,9 +9,13 @@ public class VisitorTest {
 
     @Before
     public void before(){
-        bob = new Visitor(20, 180, 50.00);
+        bob = new Visitor("Bob", 20, 180, 50.00);
     }
 
+    @Test
+    public void getName(){
+        assertEquals("Bob", bob.getName());
+    }
     @Test
     public void getAge(){
         assertEquals(20, bob.getAge());

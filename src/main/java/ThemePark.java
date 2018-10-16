@@ -71,4 +71,8 @@ public class ThemePark {
     public void parkShut(){
         visitors.clear();
     }
+
+    public String visit(Visitor visitor, Attraction attraction){
+        return visitor.getName() + " is visiting " + attraction.getName()+"!";
+    }
 }
