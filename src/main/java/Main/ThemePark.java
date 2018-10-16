@@ -1,6 +1,7 @@
 package Main;
 
 import Attraction.Attraction;
+import Interfaces.IReviewed;
 import Stall.CandyFlossStall;
 import Stall.IceCreamStall;
 import Stall.TobaccoStall;
@@ -23,7 +24,10 @@ public class ThemePark {
     private Rollercoaster rollercoaster;
     private TobaccoStall tobacco;
     private ArrayList<Visitor> visitors;
+    private ArrayList<IReviewed> reviews;
+
     public ThemePark(String name, CandyFlossStall floss, Dodgems dodgems, IceCreamStall icecream, Park park, Playground playground, Rollercoaster rollercoaster, TobaccoStall tobacco) {
+
         this.name = name;
         this.floss = floss;
         this.dodgems = dodgems;
@@ -85,5 +89,9 @@ public class ThemePark {
 
     public String visit(Visitor visitor, Attraction attraction){
         return visitor.getName() + " is visiting " + attraction.getName()+"!";
+    }
+
+    public ArrayList<IReviewed> getReviews() {
+        return reviews;
     }
 }

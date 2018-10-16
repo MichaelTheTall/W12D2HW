@@ -1,14 +1,15 @@
 package Attraction;
 
 import Attraction.Attraction;
+import Interfaces.IReviewed;
 import Interfaces.ISecurity;
 import Interfaces.ITicketed;
 import Main.Visitor;
 
-public class Rollercoaster extends Attraction implements ISecurity, ITicketed {
+public class Rollercoaster extends Attraction implements ISecurity, ITicketed, IReviewed {
 
-    public Rollercoaster(String name) {
-        super(name);
+    public Rollercoaster(String name, int rating) {
+        super(name, rating);
     }
 
     public boolean isAllowedTo(Visitor visitor){

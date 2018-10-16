@@ -1,13 +1,14 @@
 package Attraction;
 
 import Attraction.Attraction;
+import Interfaces.IReviewed;
 import Interfaces.ITicketed;
 import Main.Visitor;
 
-public class Dodgems extends Attraction implements ITicketed {
+public class Dodgems extends Attraction implements ITicketed, IReviewed {
 
-    public Dodgems(String name) {
-        super(name);
+    public Dodgems(String name, int rating) {
+        super(name, rating);
     }
 
     public double defaultPrice(){
@@ -19,5 +20,4 @@ public class Dodgems extends Attraction implements ITicketed {
             return defaultPrice()/2;
         } else return defaultPrice();
     }
-
 }

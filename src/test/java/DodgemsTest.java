@@ -16,7 +16,7 @@ public class DodgemsTest {
     public void before(){
         anna = new Visitor("Anna",10, 110, 5.00);
         bob = new Visitor("bob",20, 180, 50.00);
-        dodgems = new Dodgems("Dodgem This");
+        dodgems = new Dodgems("Dodgem This", 8);
         }
 
     @Test

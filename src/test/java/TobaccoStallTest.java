@@ -14,7 +14,7 @@ public class TobaccoStallTest {
 
     @Before
     public void before(){
-        tobacco = new TobaccoStall("Smoke on the Water", "Joe", "A24");
+        tobacco = new TobaccoStall("Smoke on the Water", "Joe", "A24", 2);
         anna = new Visitor("Anna",12, 110, 5.00);
         bob = new Visitor("bob",20, 180, 50.00);
     }

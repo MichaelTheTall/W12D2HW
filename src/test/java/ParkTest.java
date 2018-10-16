@@ -13,7 +13,7 @@ public class ParkTest {
 
     @Before
     public void before(){
-        park = new Park("The Attraction.Park");
+        park = new Park("The Attraction.Park", 8);
         anna = new Visitor("Anna",12, 110, 5.00);
         bob = new Visitor("bob",20, 180, 50.00);
 

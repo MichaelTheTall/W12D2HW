@@ -31,13 +31,13 @@ public class ThemeParkTest {
 
     @Before
     public void before(){
-        dodgems = new Dodgems("Dodgem This");
-        floss = new CandyFlossStall("Mental Floss", "Jenny", "C2");
-        icecream = new IceCreamStall("Ice To Meet You", "Ben", "B12");
-        tobacco = new TobaccoStall("Smoke on the Water", "Joe", "A24");
-        roller = new Rollercoaster("Keep on Rollin'");
-        playground = new Playground("The PlaySpace");
-        park = new Park("The Attraction.Park");
+        dodgems = new Dodgems("Dodgem This", 8);
+        floss = new CandyFlossStall("Mental Floss", "Jenny", "C2", 5);
+        icecream = new IceCreamStall("Ice To Meet You", "Ben", "B12", 7);
+        tobacco = new TobaccoStall("Smoke on the Water", "Joe", "A24", 2);
+        roller = new Rollercoaster("Keep on Rollin'", 10);
+        playground = new Playground("The PlaySpace", 9);
+        park = new Park("The Attraction.Park", 6);
 
         themePark = new ThemePark("Main.ThemePark",floss,dodgems,icecream,park,playground,roller,tobacco);
 
