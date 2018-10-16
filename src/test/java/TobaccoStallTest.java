@@ -44,6 +44,11 @@ public class TobaccoStallTest {
         assertEquals(false, tobacco.isAllowedTo(anna));
     }
 
+    @Test
+    public void price(){
+        assertEquals(6.60, tobacco.defaultPrice(), 0.01);
+    }
+
 
 }
 
