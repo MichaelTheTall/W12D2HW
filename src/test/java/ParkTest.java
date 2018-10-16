@@ -1,3 +1,5 @@
+import Attraction.Park;
+import Main.Visitor;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +13,7 @@ public class ParkTest {
 
     @Before
     public void before(){
-        park = new Park("The Park");
+        park = new Park("The Attraction.Park");
         anna = new Visitor("Anna",12, 110, 5.00);
         bob = new Visitor("bob",20, 180, 50.00);
 
@@ -19,7 +21,7 @@ public class ParkTest {
 
     @Test
     public void getName(){
-        assertEquals("The Park", park.getName());
+        assertEquals("The Attraction.Park", park.getName());
     }
 
     @Test

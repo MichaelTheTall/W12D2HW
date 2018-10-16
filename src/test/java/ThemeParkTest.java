@@ -1,3 +1,12 @@
+import Attraction.Dodgems;
+import Attraction.Park;
+import Attraction.Playground;
+import Attraction.Rollercoaster;
+import Main.ThemePark;
+import Main.Visitor;
+import Stall.CandyFlossStall;
+import Stall.IceCreamStall;
+import Stall.TobaccoStall;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -28,9 +37,9 @@ public class ThemeParkTest {
         tobacco = new TobaccoStall("Smoke on the Water", "Joe", "A24");
         roller = new Rollercoaster("Keep on Rollin'");
         playground = new Playground("The PlaySpace");
-        park = new Park("The Park");
+        park = new Park("The Attraction.Park");
 
-        themePark = new ThemePark("ThemePark",floss,dodgems,icecream,park,playground,roller,tobacco);
+        themePark = new ThemePark("Main.ThemePark",floss,dodgems,icecream,park,playground,roller,tobacco);
 
         anna = new Visitor("Anna",12, 110, 5.00);
         bob = new Visitor("bob",20, 180, 50.00);
@@ -48,7 +57,7 @@ public class ThemeParkTest {
 
     @Test
     public void getName(){
-        assertEquals("ThemePark", themePark.getName());
+        assertEquals("Main.ThemePark", themePark.getName());
     }
 
     @Test
